@@ -29,6 +29,8 @@ public class CustomStackUsingArray<T> {
     }
 
     public T[] getStackArray() {
+        if(this.top==0)
+            System.out.println("Stack is empty");
         T[] topArray= (T[])Array.newInstance(clazz,top) ;
         for (int i=0; i<top; i++){
             topArray[i]=stackArray[i];
